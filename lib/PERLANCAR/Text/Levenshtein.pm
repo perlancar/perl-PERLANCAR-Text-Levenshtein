@@ -11,6 +11,7 @@ package PERLANCAR::Text::Levenshtein;
 #our @ISA = qw(Exporter);
 #our @EXPORT_OK = qw(editdist);
 
+# BEGIN BLOCK: routine
 sub __min(@) {
     my $m = $_[0];
     for (@_) {
@@ -46,6 +47,7 @@ sub editdist {
 
     $d[@a][@b];
 }
+# END BLOCK
 
 1;
 # ABSTRACT: Calculate Levenshtein edit distance
